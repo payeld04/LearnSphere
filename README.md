@@ -1,2 +1,2 @@
 # LearnSphere
-An educationa website.
+An educational website.
