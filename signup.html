@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up LearnSphere</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="signlog.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Left Section with Welcome Text -->
+        <div class="left-section">
+            <h1 class="welcome-text">Join <br>
+                <img src="images/Logo.png" alt="Logo" width="350px">
+
+           
+        </div>
+
+        <!-- Right Section with Sign Up Form -->
+        <div class="right-section">
+            <div class="form-container">
+                <h2>Sign Up</h2>
+
+                <!-- First Name Input -->
+                <div class="input-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" placeholder="Enter your first name" required>
+                    <i class="bx bx-user"></i>
+                </div>
+
+                <!-- Last Name Input -->
+                <div class="input-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" placeholder="Enter your last name" required>
+                    <i class="bx bx-user"></i>
+                </div>
+
+                <!-- Registration No. -->
+                <div class="input-group">
+                    <label for="reg-no">Registration No.</label>
+                    <input type="text" id="reg-no" placeholder="Enter your registration number" required>
+                    <i class='bx bx-id-card' ></i>
+
+                </div>
+
+                <!-- Email ID -->
+                <div class="input-group">
+                    <label for="email">Student Email ID</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <i class='bx bx-envelope'></i>
+                </div>
+                <!--password-->
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="password" required>
+                    <i class='bx bx-lock-alt'></i>
+                    
+                </div>
+                <div class="input-box">
+                    <label for="password">Confirm Password</label>
+                    <input type="password" placeholder="confirm password" required>
+                   <i class='bx bx-lock'></i>
+                    
+                </div>
+
+                <!-- Date of Birth -->
+                <div class="input-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" required>
+                </div>
+
+                <!-- Gender Selection -->
+                <div class="input-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" required>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <i class='bx bx-male-female'></i>
+                </div>
+
+                <!-- Sign Up Button -->
+                <button onclick="signUp()">Sign Up</button>
+
+                <!-- Already have an account -->
+                <p class="footer-text">Already have an account? <a href="index.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function signUp() {
+            const firstName = document.getElementById('first-name').value.trim();
+            const lastName = document.getElementById('last-name').value.trim();
+            const regNo = document.getElementById('reg-no').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const dob = document.getElementById('dob').value.trim();
+            const gender = document.getElementById('gender').value;
+
+            if (!firstName || !lastName || !regNo || !email || !dob || !gender) {
+                alert('Please fill all the fields before signing up!');
+                return;
+            }
+
+            // Store user data for login
+            const userData = {
+                firstName,
+                lastName,
+                regNo,
+                email,
+                dob,
+                gender
+            };
+
+            localStorage.setItem('userData', JSON.stringify(userData));
+            alert('Account created successfully! You can now log in.');
+            window.location.href = 'index.html'; // Redirect to login after signup
+        }
+    </script>
+
+ <script src="script.js"></script>
+</body>
+
+</html>

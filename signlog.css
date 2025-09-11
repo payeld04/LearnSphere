@@ -1,0 +1,261 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #85d7de, #78A4A8);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 900px;
+    background: #A6E3E9;
+    border-radius: 15px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Left Section */
+.left-section {
+    background: linear-gradient(to bottom, #A6E3E9, #78A4A8);
+    padding: 40px 30px;
+    width: 45%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-section .welcome-text {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4a4a4a;
+    line-height: 1.2;
+}
+
+.left-section .welcome-text span {
+    color: #ff6b6b;
+}
+
+.left-section .motto {
+    font-size: 16px;
+    color: #8d8d8d;
+    margin-top: 5px;
+}
+
+
+/* Right Section */
+.right-section {
+    width: 55%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* Form Container */
+.form-container {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+/* Form Heading */
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-box {
+    display:inline;
+    animation-direction: column;
+    margin-bottom: 20 px; /* Adjust the gap as needed */
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #4a4a4a;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+input,
+select {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background: #f9f9f9;
+}
+
+/* Date Picker Custom Style */
+input[type="date"] {
+    background-color: #f4e7e7;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* Date Picker on Focus */
+input[type="date"]:focus {
+    border-color: #e57373;
+    outline: none;
+    box-shadow: 0 0 8px rgba(229, 115, 115, 0.5);
+}
+
+/* Calendar Popup Style */
+::-webkit-calendar-picker-indicator {
+    filter: invert(50%) sepia(10%) saturate(500%) hue-rotate(330deg) brightness(90%);
+    cursor: pointer;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #A6E3E9, #78A4A8);
+    color: black;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #A6E3E9, #78A4A8);
+}
+
+/* Footer Text */
+.footer-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+}
+
+.footer-text a {
+    color: #ff6b6b;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+/* Social Login Section */
+.social-login {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Social Login Buttons */
+.btn {
+    width: 50%;
+    height: 48px;
+    background: linear-gradient(90deg, #A6E3E9, #78A4A8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Social Icons */
+.social-icons a {
+    display: inline-flex;
+    padding: 18px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .left-section {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .right-section {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .social-login {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .btn {
+        width: 45%;
+        height: 48px;
+        background: #7494ec;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container p {
+        font-size: 14.5px;
+        margin: 15px;
+    }
+
+    .social-icons a {
+        display: inline-flex;
+        padding: 15px;
+        border: 2px solid ;
+        border-radius: 8px;
+        font-size: 20px;
+        color: #000;
+        text-decoration: none;
+        margin: 0 6px;
+    }
+}

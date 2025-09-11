@@ -1,0 +1,71 @@
+/* For medium screens (tablets) */
+@media only screen and (min-width: 946px) and (max-width: 992px) {
+    /* .search-bar {
+      width: 10%;
+    } */
+  }
+  
+  @media only screen and (min-width: 786px) and (max-width: 946px) {
+    /* .search-bar {
+      position: absolute;
+      width: 0;
+      left: 149px;
+    } */
+  
+    .dm {
+      margin: -70px -57px -85px;
+    }
+    .car {
+      margin: 0;
+      padding: 3px;
+      justify-content: center;
+    }
+  
+  }
+  @media only screen and (min-width: 320px) and (max-width: 414px) {
+    .wd{
+      width: 79px;
+      
+  
+    }
+   
+    .search-bar {
+      
+      width: 71%;
+    }
+    .is{
+      width: 56%;
+      
+    }
+    .car {
+      margin: 0;
+      padding: 3px;
+      justify-content: center;
+    }
+    .me-2{
+      height: 50%;
+    }
+  
+  }
+  
+  
+  
+  /* For small screens (mobile devices) */
+  @media (max-width: 576px) {
+    /* .search-bar {
+      width: 100%;
+      margin-top: 10px;
+    } */
+  }
+  
+  /* For somr other page */
+
+
+  /*For some other page */
+
+
+  /* For some other page */
+
+
+  /* For dome other page */
+  

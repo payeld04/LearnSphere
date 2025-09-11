@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnSphere</title>
+    <!-- Bootstrap 5 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg  " style="background-color: #b4eaef;">
+        <div class="container-fluid">
+          <!-- Left Links -->
+          <div style="height: 50px; width: 200px;">
+            <img src="images/Logo.png" class="d-block w-100 h-100"
+              alt="webname">
+          </div>
+
+          <!-- Centered Search Bar and Button -->
+          <div class="d-flex justify-content-center flex-grow-1">
+            <div class="input-group w-50">
+              <input class="form-control " type="search" placeholder="Search"
+                aria-label="Search">
+              <button class="btn btn-outline-light btn-search sho"
+                type="button">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+          <!-- Right Links -->
+          <div class="navbar-nav">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="about.html">About</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Secondary Navbar (Menu Section) -->
+      <div class="navbar navbar-expand-lg navbar-light "
+        style="background-color: #b4eaef;">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+
+              <!-- Engineer Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle sdb" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  MBA
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Civil
+                      Engineering</a></li>
+                  <li><a class="dropdown-item" href="#">Mechanical
+                      Engineering</a></li>
+                  <li><a class="dropdown-item" href="#">Electrical
+                      Engineering</a></li>
+                </ul>
+              </li>
+
+              <!-- Business Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle sdb" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Engineering
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Marketing</a></li>
+                  <li><a class="dropdown-item" href="#">Finance</a></li>
+                  <li><a class="dropdown-item"
+                      href="#">Entrepreneurship</a></li>
+                </ul>
+              </li>
+
+              <!-- More Dropdowns -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle sdb" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Computer Science
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Artificial
+                      Intelligence</a></li>
+                  <li><a class="dropdown-item" href="#">Software
+                      Development</a></li>
+                  <li><a class="dropdown-item" href="#">Cybersecurity</a></li>
+                </ul>
+              </li>
+
+              <!-- Law Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle sdb" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Medical
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Criminal Law</a></li>
+                  <li><a class="dropdown-item" href="#">Corporate Law</a></li>
+                  <li><a class="dropdown-item" href="#">International
+                      Law</a></li>
+                </ul>
+              </li>
+
+              <!-- Fine Arts Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle sdb" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Law
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Painting</a></li>
+                  <li><a class="dropdown-item" href="#">Sculpture</a></li>
+                  <li><a class="dropdown-item" href="#">Graphic Design</a></li>
+                </ul>
+              </li>
+
+              <!-- Medicine Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle sdb" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Design
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Cardiology</a></li>
+                  <li><a class="dropdown-item" href="#">Neurology</a></li>
+                  <li><a class="dropdown-item" href="#">Pediatrics</a></li>
+                </ul>
+              </li>
+
+              <!-- Communications Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle sdb" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Communications
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Public
+                      Relations</a></li>
+                  <li><a class="dropdown-item" href="#">Media Studies</a></li>
+                  <li><a class="dropdown-item" href="#">Journalism</a></li>
+                </ul>
+              </li>
+
+              <!-- Saved Link -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Saved</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Login/Signup Button -->
+          <div class="navbar-nav">
+            <a class="nav-link" href="login.html">Login</a>
+            <a class="nav-link" href="signup.html">/  Signup</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- College image slider with search bar -->
+      <div class="hero">
+        <div class="hero-overlay">
+          <div id="carouselExampleAutoplaying" class="carousel slide"
+            data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+              <div class="carousel-item img-h active">
+                <img src="images/iit.jpg" class="d-block w-100 h-100"
+                  alt="First slide">
+              </div>
+              <div class="carousel-item img-h">
+                <img src="images/ku.png" class="d-block w-100 h-100"
+                  alt="Second slide">
+              </div>
+              <div class="carousel-item img-h">
+                <img src="images/makaut.jpeg" class="d-block w-100 h-100"
+                  alt="Third slide">
+              </div>
+              <div class="carousel-item img-h">
+                <img src="images/IIMC.jpg" class="d-block w-100 h-100"
+                  alt="Fourth slide">
+              </div>
+              <div class="carousel-item img-h">
+                <img src="images/au.jpg" class="d-block w-100 h-100"
+                  alt="Fifth slide">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-content">
+          <h1>Find Colleges, Courses & Exams that are Best for You</h1>
+          <p>64,000+ Colleges • 4,45,000+ Courses • 6,40,000+ Reviews • 950+
+            Exams</p>
+          <div class="input-group mt-3">
+            <input type="text" class="form-control"
+              placeholder="Search Colleges, Courses, Exams...">
+            <button class="btn btn-primary">Search</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container contm">
+        <div class="container-fluid featured m">
+          <div class="row text-center">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <h6>JIMS Kalkaji</h6>
+                  <p>Delhi</p>
+                  <p>Assured placements of 11.5-15 Lacs*</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <h6>Amity University</h6>
+                  <p>Noida (Delhi NCR)</p>
+                  <p>Ranked amongst the top 3% universities globally</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <h6>GNIOT Group of Institutions</h6>
+                  <p>Greater Noida</p>
+                  <p>Highest Package 70 LPA, NAAC A+</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <h6>CMS Business School</h6>
+                  <p>Bangalore</p>
+                  <p>Jain Entrance Test (JET) | MBA Admissions 2025 Open</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu">
+          <a href="#">Engineering</a>
+          <a href="#">Business</a>
+          <a href="#">Computer Science</a>
+          <a href="#">Law</a>
+          <a href="#">Fine Arts</a>
+          <a href="#">Medical</a>
+          <a href="#">Comunication</a>
+        </div>
+
+        <div class="container content">
+          <div class="row text-center">
+            <div class="col-md-4">
+              <h5>MBA EXAMS</h5>
+              <p>50+ MBA exams. Important dates, preparation tips, syllabus, and
+                more.</p>
+            </div>
+            <div class="col-md-4">
+              <h5>MBA RANKINGS</h5>
+              <p>Check out the latest college rankings from trusted sources.</p>
+            </div>
+            <div class="col-md-4">
+              <h5>IIM & NON IIM CALL PREDICTOR</h5>
+              <p>Find your eligibility and chances of getting an IIM call.</p>
+            </div>
+          </div>
+          <div class="row text-center mt-4">
+            <div class="col-md-4">
+              <h5>ASK CURRENT MBA STUDENT</h5>
+              <p>Have college-specific questions? Get answers from current
+                students.</p>
+            </div>
+            <div class="col-md-4">
+              <h5>ALUMNI SALARY DATA</h5>
+              <p>Check out company, role, and salary data of MBA college
+                alumni.</p>
+            </div>
+            <div class="col-md-4">
+              <h5>COMPARE COLLEGES</h5>
+              <p>Compare colleges based on salary, rank, fees, and
+                infrastructure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js (optional for responsiveness) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Icons CDN (for the search icon) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet">
+  </body>
+</html>
